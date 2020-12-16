@@ -1,10 +1,10 @@
 Running Tomcat 8.5.57 on Docker
 ============
 
-You can run a Tomcat container in your local in two ways.
+You can run a `Tomcat` container in your local in two ways:
 
 1) Create your image with the webapp `manager.war` already configured, and run a container each time you need Tomcat running. 
-2) Run a container using the remote image and configure it accessing linux `bash` console.
+2) Run a container using the remote image and configure it using linux `bash` console.
 
 
 ### 1) Create your local image using Docker file
@@ -15,6 +15,7 @@ docker exec -it ea.tomcat8 bash
 ```
 
 Try to access the manager with `ermal/admin` on `http://localhost:7001/manager`
+
 
 ### 2) Run the container and configure it
 
@@ -35,7 +36,7 @@ mv webapps.dist webapps
 ```
 
 ##### 2.2 Download vim
-You need vim to modify container's files.
+You need `vim` to modify the container's files.
 
 ```
 apt-get update
@@ -64,7 +65,7 @@ vim /usr/local/tomcat/webapps/manager/META-INF/context.xml
  -->
 ```
 
-### Test using ermal / admin
+##### 2.4 Test using ermal/admin
 ```
 http://localhost:7001/manager
 ```
