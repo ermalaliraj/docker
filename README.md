@@ -2,33 +2,32 @@
 
 https://docs.docker.com/engine/reference/run/
 
-# images
+### images
 
 A Docker image is a file, comprised of multiple layers, that is used to execute code in a Docker container.
 
 ```
-FROM jboss/wildfly                                                   # create a linux machine starting from jboss/wildfly image
-ADD hello-world.war /opt/jboss/wildfly/standalone/deployments/       # add the file hello-world.war in teh remote path
+FROM jboss/wildfly                                              # create a linux machine starting from jboss/wildfly image
+ADD hello-world.war /opt/jboss/wildfly/standalone/deployments/  # add the file hello-world.war to the remote path
 ```
 
 ```
-docker build --tag=hello-world-war .              # build the image hello-world-war using Docker file in actual postion .
+docker build --tag=hello-world-war .      # build hello-world-war image using Docker file in actual postion
 ```
 
 ```
-docker images                                     # list all images
-docker rmi image_name   (-f force)                # remove image
+docker images                                                # list all images
+docker rmi image_name   (-f force)                           # remove image
 
 docker build --shm-size=1G -t hello-world-war .              # build image with size of /dev/shm of 1G
 docker save -o hello-world-war.tar hello-world-war:latest    # save image in a file
 docker load --input hello-world-war.tar                      # load image from a file
 ```
 
-# containers
+### containers
 
 ```
 docker run -it -p 8080:8080 hello-world-war    # run the container on port 8080 using the previous image
-test application: http://localhost:8080/hello-world/
 ```
 
 ```
@@ -45,7 +44,7 @@ docker inspect <container_id>                  # see container details as json
 ```
 
 
-# Test
+### Test
 ```
 http://localhost:8080/hello-world/
 ```
