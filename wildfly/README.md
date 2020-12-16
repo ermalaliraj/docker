@@ -1,18 +1,18 @@
 # wildfly
 
-# Docker file
+### Docker file
 ```
-FROM jboss/wildfly                                                   # create a linux machine starting from jboss/wildfly image
-ADD hello-world.war /opt/jboss/wildfly/standalone/deployments/       # add the file hello-world.war in teh remote path
-```
-
-# build image and container
-```
-docker build --tag=hello-world-war .   
-docker run -it -p 8080:8080 hello-world-war         
+FROM jboss/wildfly                                              # starting from jboss/wildfly image
+ADD hello-world.war /opt/jboss/wildfly/standalone/deployments/  # add the war in the remote path
 ```
 
-# Test
+### Build image and container
+```
+docker build --tag=hello-world-war .                 # build
+docker run -it -p 8080:8080 hello-world-war          # run
+```
+
+### Test
 ```
 http://localhost:8080/hello-world/
 ```
