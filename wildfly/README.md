@@ -1,5 +1,7 @@
 # wildfly
 
+Example of creating a jboss Wildfly image with the war `hello-world.war`
+
 ### Docker file
 ```
 FROM jboss/wildfly                                              # starting from jboss/wildfly image
