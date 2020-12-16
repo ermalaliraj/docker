@@ -25,8 +25,8 @@ Below some useful commands.
 A Docker image is a file, comprised of multiple layers, that is used to execute code in a Docker container.
 
 ```
-FROM jboss/wildfly                                              # create a linux machine starting from jboss/wildfly image
-ADD hello-world.war /opt/jboss/wildfly/standalone/deployments/  # add the file hello-world.war to the remote path
+FROM jboss/wildfly                                              # starting from jboss/wildfly image
+ADD hello-world.war /opt/jboss/wildfly/standalone/deployments/  # add the war in the remote path
 ```
 
 ```
