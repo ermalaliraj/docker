@@ -22,7 +22,7 @@ Below some useful commands.
 
 ### Docker Images
 
-A Docker image is a file, comprised of multiple layers, that is used to execute code in a Docker container.
+A `Docker` image is a file, comprised of multiple layers, that is used to execute code in a Docker container.
 
 ```
 FROM jboss/wildfly                                              # starting from jboss/wildfly image
@@ -30,7 +30,7 @@ ADD hello-world.war /opt/jboss/wildfly/standalone/deployments/  # add the war in
 ```
 
 ```
-docker build --tag=hello-world-war .      # build hello-world-war image using Docker file in actual postion
+docker build --tag=hello-world-war .    # build hello-world-war image using Docker file in the actual position
 ```
 
 ```
