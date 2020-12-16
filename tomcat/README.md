@@ -19,6 +19,11 @@ docker exec -it ea.tomcat8 bash
 http://localhost:7001/manager
 ```
 
+##### 1.2 Logs
+```
+docker logs -f ea.tomcat8
+```
+
 ### 2) Run the container and configure it
 
 ```
