@@ -1,4 +1,4 @@
-Hello World Webapp on Docker
+Hello World Webapp
 ============
 
 Create a jboss Wildfly image and deploy `hello-world.war`
