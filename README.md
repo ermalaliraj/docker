@@ -74,3 +74,12 @@ http://localhost:8080/hello-world/
 
 
 
+# See
+
+https://medium.com/faun/understanding-docker-container-memory-limit-behavior-41add155236c
+https://thorsten-hans.com/limit-memory-for-docker-containers
+https://phoenixnap.com/kb/docker-memory-and-cpu-limit
+
+
+
+
